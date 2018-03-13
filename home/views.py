@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from messenger.models import Message
+from blog.models import Blog
 # Create your views here.
 def get_index(request):
 
