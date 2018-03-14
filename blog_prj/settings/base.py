@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'home',
     'accounts',
     'blog',
+    
 ]
 
 MIDDLEWARE = [
@@ -60,6 +61,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media',
             ],
         },
     },
@@ -114,3 +116,6 @@ STATIC_URL = '/static/'
 STATIC_ROOT = 'staticfiles'
 
 MESSAGE_STORAGE = "django.contrib.messages.storage.session.SessionStorage"
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = 'media'
