@@ -1,11 +1,12 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Blog
 from .forms import ComposeBlogForm
+from .models import Post
 
 # Create your views here.
 
 def get_inbox(request):
-    return render(request, "blog/inbox.html")
+    return render(request, "blog/templates/inbox.html")
 
 def sent(request):
     return render(request, "blog/sent.html")
