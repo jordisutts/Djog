@@ -19,7 +19,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '*j##zgt19@2_xjnif3ffl1vdx_6q0bguhkvv(m##k!4uxf1s&7'
 
-ALLOWED_HOSTS = ['127.0.0.1', 'blog-proj-richardadalton.c9users.io', 'com-devjoy-blog.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'com-devjoy-blog.herokuapp.com', 'django-blog-jordisutts.c9users.io']
 
 # Application definition
 

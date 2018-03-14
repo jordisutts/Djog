@@ -24,11 +24,3 @@ urlpatterns = [
     url(r'^accounts/', include(accounts_urls)),
     url(r'^blog/', include(blog_urls)),
 ]
-
-from django.conf import settings
-
-if settings.DEBUG:
-    import debug_toolbar
-    urlpatterns = [
-        url(r'^__debug__/', include(debug_toolbar.urls)),
-    ] + urlpatterns
