@@ -1,9 +1,8 @@
-{% extends 'home/base.html' %}
+{% extends "home/base.html" %}
 {% load bootstrap_tags %}
 {% block content %}
-<h1>Login</h1>
-
     <form role="form" method="post">
+        <legend>Login</legend>
         {% csrf_token %}
         {{ form | as_bootstrap }}
         <p><a href="#">Forgot my password</a></p>
@@ -11,5 +10,4 @@
             <button type="submit" class="btn btn-primary">Login</button>
         </div>
     </form>
-    
 {% endblock %}

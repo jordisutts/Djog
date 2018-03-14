@@ -1,6 +1,9 @@
 {% extends 'home/base.html' %}
 
 {% block content %}
+    <ul>
     {% for post in posts %}
-        <p> {{ posts }} </p>
+    <li><a href="{% url 'post_detail' post.id %}">{{ post.title }}</a></li>
     {% endfor %}
+    </ul>
+{% endblock content %}
